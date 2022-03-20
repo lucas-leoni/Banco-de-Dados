@@ -1,16 +1,12 @@
 # Exercício Prático Laboratório: Comandos DML/SQL
 
-## Analise o BD abaixo, utilizado em uma distribuidora de vinhos, para controle dos estoques de suas lojas:
-
----
+### Analise o BD abaixo, utilizado em uma distribuidora de vinhos, para controle dos estoques de suas lojas:
 
 # <center> ![Exercício 1](Exercício1.png) </center>
 
 ## 1 - Liste o nome dos vinhos, e a soma dos estoque (quantidade) de todas as lojas estabelecidas no estado de “Santa Catarina”.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 SELECT V.NM_VINHO, SUM(E.QT_ESTOQUE)
@@ -22,13 +18,9 @@ AND C.CD_ESTADO = 'SC'
 GROUP BY V.NM_VINHO
 ```
 
----
-
 ## 2 - Para os vinhos produzidos pela vinícola Don Pablo, retorne: nome do vinho, descrição da região e cor, bem como o seu valor de venda.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 SELECT V.NM_VINHO, R.DS_REGIAO, C.DS_COR, V.VL_VENDA
@@ -39,13 +31,9 @@ AND V.CD_COR = C.CD_COR
 GROUP BY V.NM_VINHO
 ```
 
----
-
 ## 3 - Para o estado do Rio Grande do Sul, retorne o nome das lojas e suas respectivas cidades.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 SELECT L.NM_LOJA, C.NM_CIDADE
@@ -55,13 +43,9 @@ AND L.CD_CIDADE = C.CD_CIDADE
 GROUP BY L.NM_LOJA
 ```
 
----
-
 ## 4 - Retorne a quantidade dos vinhos do estoques, agrupados por nome de vinho.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 SELECT V.NM_VINHO, SUM(E.QT_ESTOQUE)
@@ -70,13 +54,9 @@ WHERE V.CD_VINHO = E.CD_VINHO
 GROUP BY V.NM_VINHO
 ```
 
----
-
 ## 5 - Promova um aumento de 10% no valor de venda do vinho Barca Velha.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 UPDATE VINHO
