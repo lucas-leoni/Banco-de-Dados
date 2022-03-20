@@ -6,7 +6,7 @@
 
 ### Queremos controlar os aluguéis de filmes. Um cliente pode alugar vários filmes ao mesmo tempo. Precisamos manter o histórico de nossos aluguéis. Cada vez que um cliente aluga uma mídia, queremos manter a data do aluguel e a data do retorno. Mantendo este histórico de aluguel, seremos capazes de analisar o padrão de nossos aluguéis. Poderemos determinar quantas fitas cada cliente aluga e quantas vezes um cliente devolveu a fita em atraso. Seremos capazes de saber quantas fitas em particular foi usada, e então saberemos quando retirar cada fita. Também seremos capazes de analisar as preferências de filmes de nossos clientes.
 
----
+#
 
 # Resolução
 
