@@ -10,4 +10,4 @@
 
 # Resolução
 
-# <center> ![Exercício 1](Exercício1.png) </center>
+# ![Exercício 1](Exercício1.png)
