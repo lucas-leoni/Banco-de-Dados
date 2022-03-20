@@ -8,8 +8,8 @@
 
 ### Para cada equipamento enviado à terceiros, é criado um controle que consiste em um número seqüencial de remessa, identificação do equipamento, laboratório ao qual foi enviado o equipamento, data de remessa, data de retorno previsto e data real de retorno. Um equipamento pode sofrer vários serviços numa remessa, na qual é necessário identificar o tipo de serviço e o valor orçado para o mesmo. Cada remessa refere-se a somente um equipamento.
 
----
+#
 
 # Resolução
 
-# <center> ![Exercício 3](Exercício3.png) </center>
+# ![Exercício 3](Exercício3.png)
