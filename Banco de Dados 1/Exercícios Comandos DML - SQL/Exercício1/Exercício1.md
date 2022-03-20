@@ -2,7 +2,7 @@
 
 ### Analise o BD abaixo, utilizado em uma distribuidora de vinhos, para controle dos estoques de suas lojas:
 
-# <center> ![Exercício 1](Exercício1.png) </center>
+# ![Exercício 1](Exercício1.png)
 
 ## 1 - Liste o nome dos vinhos, e a soma dos estoque (quantidade) de todas as lojas estabelecidas no estado de “Santa Catarina”.
 
