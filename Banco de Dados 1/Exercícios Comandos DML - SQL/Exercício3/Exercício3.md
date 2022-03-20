@@ -1,12 +1,10 @@
 # Exercício DML/SQL Banco de Dados Vinícola
 
-# <center> ![Exercício 3](Exercício3.png) </center>
+# ![Exercício 3](Exercício3.png)
 
 ## 1 - Obtenha o nome dos vinhos, seus valores de custo e de venda, o nome da vinícola, a descrição da região, a descrição da cor e do tipo, que fazem parte do estoque das lojas localizadas no estado do Rio Grande do Sul.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 select v.nm_vinho, v.vl_custo, v.vl_venda, va.nm_vinicola, r.ds_regiao, c.ds_cor, t.ds_tipo
@@ -21,13 +19,9 @@ and ci.cd_cidade = l.cd_cidade
 and ci.cd_estado = 'RS'
 ```
 
----
-
 ## 2 - Retornar o nome, o nr do fone e o nome da cidade das lojas que possuem em seus estoques uma quantidade menor que 20 garrafas do vinho “Redoma”.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 select l.nm_loja, va.nr_fone, c.nm_cidade
@@ -40,13 +34,9 @@ and v.nm_vinho = 'Redoma'
 and e.qt_estoque < 20
 ```
 
----
-
 ## 3 - Liste o nome dos vinhos, e a soma dos estoques (quantidade) de todas as lojas estabelecidas no estado de “Santa Catarina”.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 select v.nm_vinho, sum(qt_estoque) 'soma_estoque'
@@ -58,13 +48,9 @@ and c.cd_estado = 'SC'
 group by v.nm_vinho
 ```
 
----
-
 ## 4 - Retorne o nome das lojas e o valor dos seus estoques (considerando quantidade e valor de venda dos vinhos) . Considerar somente estoques com valor superior a R$ 2.000,00. Classificar pelo valor do maior estoque.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 select l.nm_loja, sum(e.qt_estoque * v.vl_venda) 'vl_estoque'
@@ -76,13 +62,9 @@ having vl_estoque > 2000.00
 order by vl_estoque desc
 ```
 
----
-
 ## 5 - Retorne por Estado, o número total de Lojas.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 select e.nm_estado, count(l.cd_loja) 'qt_loja'
@@ -92,13 +74,9 @@ and l.cd_cidade = c.cd_cidade
 group by nm_estado
 ```
 
----
-
 ## 6 - Promova um aumento de 10% no valor de venda para todos os vinhos fornecidos pela Vinícola “Don Pablo”.
 
----
-
-## Resolução
+### Resolução
 
 ```sql
 update vinho
