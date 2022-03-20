@@ -4,8 +4,8 @@
 
 ### Quando problema é resolvido, é registrada a data de solução real, afim de se efetuar estatística quanto ao desempenho das equipes responsáveis. Cada reclamação aponta um problema. Se o mesmo cliente aponta mais de um problema, para cada problema é criada uma reclamação. Para cada problema é necessário guardar seu código e descrição, bem como a área responsável por este problema. Cada problema possui uma área responsável e, uma área pode ser responsável por vários problemas.
 
----
+#
 
 # Resolução
 
-# <center> ![Exercício 2](Exercício2.png) </center>
+# ![Exercício 2](Exercício2.png)
